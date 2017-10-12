@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains vi_panel.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function vi_panel_theme() {
+  return array(
+    'vi_panel_block' => array(
+      'render element' => 'content',
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function template_preprocess_vi_panel_block(&$variables) {
+  $config = \Drupal::config('vi_panel.settings');
+  $settings = $config->get();
+  $variables['content'] = array('output' => 'block');
+}

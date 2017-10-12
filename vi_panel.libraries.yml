@@ -1,0 +1,14 @@
+vi_panel:
+  version: VERSION
+  css:
+    theme:
+      css/vi_panel.css: {}
+  js:
+    js/js.cookie.js: {}
+    js/vi_panel.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

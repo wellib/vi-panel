@@ -1,0 +1,7 @@
+vi_panel.on:
+  path: '/bad-vision-on'
+  defaults:
+    _title: 'bad-vision-on'
+    _controller: '\Drupal\vi_panel\Controller\ViController::on'
+  requirements:
+    _permission: 'access content'

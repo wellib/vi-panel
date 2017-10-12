@@ -1,0 +1,5 @@
+name: vi_panel
+type: module
+description: Special view mode
+core: 8.x
+package: Custom
